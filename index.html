@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script src="babyTask.js"></script>
+  <title>Index</title>
+  <meta charset="utf-8">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+</head>
+
+<body>
+
+<div>
+  <h1>Baby<br>Task Manager</h1>
+</div>
+
+<div class="dropdown">
+    <button type=button
+      class = "button button_menu"
+      onclick="showMenu()">
+    <img src="dots-vertical-circle.png" width="50" height="50">
+  </button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="edit_tasks.html"><img src="pencil.png" width="50" height="50">Edit</a>
+      <a href="#"><img src="notebook.png" width="50" height="50">Logs</a>
+    </div>
+</div> 
+  <h4 id="menu_click">click the menu for more options</h4>
+</div>
+
+<div>
+<table align="center">
+  <tr>
+    <td class="task">
+      <h2>MILK</h2>
+    </td>
+    <td>
+      <button type="button" name="milk_chat"
+        class="button button_task"
+        onClick="milk_Chat('MILK')">
+        <img src="chat.png" width="50" height="50">
+      </button>
+    </td>
+  </tr>
+
+  <tr>
+    <td><h3 id="milk_date">8:00 pm</h3></td>
+    <td>
+      <button type="button" name="milk_iud"
+        class="button button_task"
+        onclick="milk_instantUpdate('MILK')">
+        <img src="check.png" width="50" height="50">
+      </button>
+    </td>
+  </tr>
+  
+  <tr>
+    <td><h3 id="milk_time">1H</h3></td>
+    <td>
+      <button type="button" name="milk_cud"
+        class="button button_task"
+        onClick="milk_CustomUpdate('MILK')">
+        <img src="clock-check.png" width="50" height="50">
+      </button>
+    </td>
+  </tr>
+</table>
+
+<p id="milk_alert"></p>
+</div>
+
+<div>
+<table align="center">
+  <tr>
+    <td class="task">
+      <h2>FOOD</h2>
+    </td>
+    <td><img src="chat.png" width="50" height="50"></td>
+  </tr>
+
+  <tr>
+    <td><h3>3:52 pm</h3></td>
+    <td><img src="check.png" width="50" height="50"></td>
+  </tr>
+  
+  <tr>
+    <td><h3>2H 7M</h3></td>
+    <td><img src="clock-check.png" width="50" height="50"></td>
+  </tr>
+</table>
+</div>
+
+<div>
+  <table align="center">
+    <tr>
+      <td class="task">
+        <h2>DIAPER</h2>
+      </td>
+      <td><img src="chat.png" width="50" height="50"></td>
+    </tr>
+  
+    <tr>
+      <td><h3>7:30 pm</h3></td>
+      <td><img src="check.png" width="50" height="50"></td>
+    </tr>
+    
+    <tr>
+      <td><h3>1D 1H 30M</h3></td>
+      <td><img src="clock-check.png" width="50" height="50"></td>
+    </tr>
+  </table>
+  </div>
+
+</body>
+
+</html>
